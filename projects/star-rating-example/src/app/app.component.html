@@ -39,12 +39,18 @@
                     [static]="false" starsQuantity="7"></mgid-star-rating>
 </section>
 <section class="example-wrapper">
-  <h3>Warn example, size 40</h3>
-  <mgid-star-rating [value]="2"
-                    [size]="40" [color]="'warn'"></mgid-star-rating>
+  <h3>Warn example, size 40, other icons</h3>
+  <mgid-star-rating [value]="3.5"
+                    [emptyIcon]="'check_box_outline_blank'"
+                    [halfIcon]="'indeterminate_check_box'"
+                    [fullIcon]="'check_box'"
+                    [size]="40"
+                    [color]="'warn'"></mgid-star-rating>
 </section>
 <section class="example-wrapper">
   <h3>Accent example, size 60</h3>
-  <mgid-star-rating [value]="5" [label]="true" [labelSize]="30" [labelPosition]="'after'"
+  <mgid-star-rating [value]="5" [label]="true"
+                    [labelSize]="30"
+                    [labelPosition]="'after'"
                     [size]="60" [color]="'accent'"></mgid-star-rating>
 </section>

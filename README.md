@@ -4,24 +4,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-## Code scaffolding
+## Modify and update rating component
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Modify rating library (`projects/star-rating`).
+2. Run `npm run rating:build` to rebuild the library.
+3. Run `npm run rating:pack` to package (if you need) all files of rating module to single archive (`dist/rating/rating-0.0.1.tgz`).
 
-## Build
+## Options
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. `starsQuantity: number` (default 5)
+2. `color: ThemePalette` from Angular Material (default 'primary')
+3. `size: number` (default 25)
+4. `value: number` (if not use FormControl)
+5. `label: boolean` (default false)
+6. `labelSize: number` (default 20)
+7. `labelPosition: 'before' || 'after'` (default 'before')
+8. `emptyIcon: string` from Material Icon (default 'star_border')
+9. `halfIcon: string` from Material Icon (default 'star_half')
+10. `fullIcon: string` from Material Icon (default 'star')
+11. `static: boolean` (default true)
