@@ -1,0 +1,50 @@
+<section class="example-wrapper">
+  <mat-toolbar color="primary">
+    <button mat-icon-button>
+      <mat-icon>star</mat-icon>
+    </button>
+    <span>Star rating example</span>
+  </mat-toolbar>
+</section>
+<section class="example-wrapper">
+  <h3>Input options:</h3>
+  <ul>
+    <li>starsQuantity: number (default 5)</li>
+    <li>color: ThemePalette from Angular Material (default 'primary')</li>
+    <li>size: number (default 25)</li>
+    <li>value: number (if not use FormControl)</li>
+    <li>label: boolean (default false)</li>
+    <li>labelSize: number (default 20)</li>
+    <li>labelPosition: 'before' || 'after' (default 'before')</li>
+    <li>emptyIcon: string from Material Icon (default 'star_border')</li>
+    <li>halfIcon: string from Material Icon (default 'star_half')</li>
+    <li>fullIcon: string from Material Icon (default 'star')</li>
+    <li>static: boolean (default true)</li>
+  </ul>
+  <h3>Output options:</h3>
+  <ul>
+    <li>valueChange: number (EventEmitter if FormControl not use)</li>
+  </ul>
+</section>
+<section class="example-wrapper">
+  <h3>Static example</h3>
+  <div>All options are optional</div>
+  <mgid-star-rating [value]="2.5"
+                    [label]="true"></mgid-star-rating>
+</section>
+<section class="example-wrapper">
+  <h3>Editable example</h3>
+  <div>Required option: static = false</div>
+  <mgid-star-rating [formControl]="ratingControl"
+                    [static]="false" starsQuantity="7"></mgid-star-rating>
+</section>
+<section class="example-wrapper">
+  <h3>Warn example, size 40</h3>
+  <mgid-star-rating [value]="2"
+                    [size]="40" [color]="'warn'"></mgid-star-rating>
+</section>
+<section class="example-wrapper">
+  <h3>Accent example, size 60</h3>
+  <mgid-star-rating [value]="5" [label]="true" [labelSize]="30" [labelPosition]="'after'"
+                    [size]="60" [color]="'accent'"></mgid-star-rating>
+</section>
